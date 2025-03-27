@@ -1,0 +1,105 @@
+[
+  {
+    "id": 1,
+    "type": "temp-one",
+    "heading": "We Create Super Awesome Desings",
+    "subheading": "We will provide you best examples,logics,tools-idea,components ideas...",
+    "data": [
+      {
+        "id": 11,
+        "label": "Amazing Logic",
+        "value": "You will get logic likes , literally used for high optimization..."
+      },
+      {
+        "id": 12,
+        "label": "Code Editor",
+        "value": "You will get code editor + tips how to integerate code editor in your app"
+      },
+      {
+        "id": 13,
+        "label": "Frontend Frameworks Uses",
+        "value": "You will get idea about how to use Reactjs,Next js ..."
+      },
+      {
+        "id": 14,
+        "label": "Backend Studies",
+        "value": "You will get idea about how to call backend in frontend ..."
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "type": "temp-two",
+    "heading": "We Create Super Awesome Desings",
+    "subheading": "We will provide you best examples,logics,tools-idea,components ideas...",
+    "data": [
+      {
+        "id": 11,
+        "label": "Amazing Logic",
+        "value": "You will get logic likes , literally used for high optimization..."
+      },
+      {
+        "id": 12,
+        "label": "Code Editor",
+        "value": "You will get code editor + tips how to integerate code editor in your app"
+      },
+      {
+        "id": 13,
+        "label": "Frontend Frameworks Uses",
+        "value": "You will get idea about how to use Reactjs,Next js ..."
+      },
+      {
+        "id": 14,
+        "label": "Backend Studies",
+        "value": "You will get idea about how to call backend in frontend ..."
+      }
+    ]
+  },
+  {
+    "id":3,
+    "type":"about-me",
+    "data":[
+        {
+            "id":31,
+            "Label":"Be a Cool Coder",
+            "Value":"Hey, I am Nitesh Nimje,Frontend - Developer  in Jio Platforms LImited"
+        }
+    ]
+  },
+  {
+    "id":4,
+    "type":"temp-four",
+    "data":[
+      {
+        "id":41,
+        "label":"React JS",
+        "src":"/assets/icons/react.svg",
+        "value":"Most demandable Library for frontend now ad days"
+      },
+      {
+        "id":42,
+        "label":"NEXT JS",
+        "src":"/assets/icons/nextjssvg.svg",
+        "value":"Most demandable Library for frontend now ad days"
+      },
+        {
+          "id":43,
+          "label":"DSA",
+          "src":"/assets/icons/dsa.png",
+          "value":"Most demandable Library for frontend now ad days"
+        },
+        {
+          "id":44,
+          "label":"CSS",
+          "src":"/assets/icons/css.svg",
+          "value":"Most demandable Library for frontend now ad days"
+        },
+        {
+          "id":45,
+          "label":"JAVA",
+          "src":"/assets/icons/java.svg",
+          "value":"Most demandable Library for frontend now ad days"
+        }
+    ]
+  }
+]

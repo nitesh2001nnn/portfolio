@@ -1,0 +1,55 @@
+.navbar-container{
+    
+    border: 1px solid black;
+    width: 100%;
+    padding: 12px 10px;
+    background-color: rgb(22, 20, 20);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+
+    
+    
+
+    .ul-tag{
+        display: flex;
+        justify-content: space-between;
+        gap: 24px;
+        color: rgb(249, 242, 242);
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        background-color: transparent;
+        font-weight: bold;
+       
+        .about{
+            position: relative;
+        }
+        
+    }
+
+    
+    
+    
+}
+
+.ref-container{
+    display: flex;
+    gap: 8px;
+    flex-direction: column;
+    .dropdown-content{
+        padding: 8px 16px;
+        &:hover{
+            background-color: black;
+            color: var(--white);
+        }
+        
+    }
+}
+.about-content{
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index:1;
+    
+    
+}

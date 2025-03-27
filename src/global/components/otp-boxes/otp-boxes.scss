@@ -1,0 +1,22 @@
+.otp-box-container{
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    .otp-box-input{
+        padding: 10px 5px;
+        border-radius: 5px;
+        border: 1px solid var(--black);
+        max-width: 30px;
+        text-align: center;
+        font-size: 0.85rem;
+        font-weight: 700;
+        cursor: pointer;
+        &.activeBox{
+            border: 1px solid var(--feedback-success-50);
+        }
+        &:hover{
+            border: 1px solid var(--grey-70);
+        }
+    }
+
+}

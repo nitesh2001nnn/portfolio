@@ -1,0 +1,42 @@
+.primary-button {
+  width: max-content;
+  padding: 4px 20px;
+  background-color: var(--black);
+  color: var(--white);
+  border-radius: 20px;
+  height: 40px;
+  font-family: "Kanit", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 1rem;
+    line-height: 0.5rem;
+    
+  &.disabled{
+    background-color: var(--grey-70);
+    cursor: not-allowed;  /* Show a disabled cursor */
+  opacity: 0.6;  /* Reduce visibility */
+  pointer-events: none;  /* Disable all click events */
+  }
+  &:hover{
+    background-color: var(--grey-70);
+  }
+}
+
+.secondary-button {
+    width: max-content;
+    padding: 4px 20px;
+    background-color: var(--white);
+    color: var(--black);
+    border-radius: 20px;
+    height: 40px;
+    font-family: "Kanit", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 1rem;
+    line-height: 0.5rem;
+    border: 1px solid var(--black);
+    &:hover{
+      background-color: var(--grey-70);
+      color: var(--white);
+    }
+  }

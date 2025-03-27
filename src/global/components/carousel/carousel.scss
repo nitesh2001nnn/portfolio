@@ -1,0 +1,87 @@
+.carousel-wrapper{
+    position: relative;
+    display: flex;
+        flex-direction: column;
+        gap: 30px;
+    .carousel-container{
+        // background-color: var(--temp-background);
+        overflow-x:hidden;
+        padding-right: calc(25px + 8px);
+        
+        
+        .carousel-slider{
+            display: flex;
+           width: 100%;
+           transition: transform 0.2s ease-in-out;
+           padding-right: 20px;
+            // justify-content: space-between;
+            
+            .card-container{
+               
+                
+                background-color: var(--white);
+                flex: 0 0 32.31%;
+                border: 1px solid black;
+                margin: 12px 10px;
+                max-height:50%;
+                .img-container{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    background-color: rgb(60, 34, 57);
+                    width: 100%;
+                    img{
+                        width: 60px;
+                        height: 90px;
+                    }
+    
+                }
+    
+            }
+        }
+        
+    }
+    .previous-button{
+        position: absolute;
+        top: 40%;
+        left: -4%;
+        background-color: rgba(251, 247, 247, 0.401);
+        padding: 8px 10px;
+        
+        border-radius: 8px;
+        border: 1px solid black;
+        &:active{
+            background-color: rgb(184, 10, 10);
+        }
+    }
+    .next-slide-btn{
+        position: absolute;
+        top: 40%;
+        right: -4%;
+        background-color: rgba(251, 247, 247, 0.401);
+        padding: 8px 10px;
+        border-radius: 8px;
+        border: 1px solid black;
+        &:active{
+            background-color: rgb(184, 10, 10);
+        }
+    }
+    .dot-container{
+        display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+        .dots{
+            border-radius: 50%;
+            background-color: var(--white);
+            width: 15px;
+            height: 15px;
+            &.active{
+                background-color: black;
+            }
+            
+
+        }
+       
+    }
+}

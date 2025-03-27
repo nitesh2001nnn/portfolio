@@ -1,0 +1,51 @@
+.otp-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+
+  .otp-container {
+    min-width: 380px;
+    max-width: min-content;
+    border: 1px solid var(--black);
+    background-color: var(--white);
+    border-radius: 20px;
+    padding: 15px 24px;
+    .otp-header {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .otp-head-label {
+      margin-top: 5px;
+    }
+    .sub-otp-head {
+      margin-top: 10px;
+      .change-text {
+        color: var(--feedback-error-50);
+        font-size: 0.85rem;
+        cursor: pointer;
+      }
+    }
+    .otp-boxes {
+      margin-top: 24px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .button-container {
+      margin-top: 24px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+
+      .secondary-button,
+      .primary-button {
+        width: 75%;
+      }
+    }
+  }
+}

@@ -1,0 +1,78 @@
+
+.input-wrapper{
+    position: relative;
+    width: 100%;
+    .input-container{
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+        width: 100%;
+        .input-label{
+            color: var(--grey-80);
+        }
+        .input-comp{
+            color: var(--grey-100);
+            border-radius: 8px;
+            border: 1px solid var(--grey-50);
+            background-color: var(--white);
+            position: relative;
+            outline:none;
+            padding: 8px 12px;
+            transition : background-color 250ms , border-width 250ms;
+    
+            &.error-div{
+                border: 1px solid var(--feedback-error-50);
+    
+            }
+            &.success-div{
+                border: 1px solid var(--feedback-success-50);
+    
+            }
+        }
+        
+    
+    }
+    .input-warning-container{
+        position: absolute;
+        top: 62px;
+        .input-error{
+            display: flex;
+            align-items:center ;
+            gap:4px;
+            color: var(--feedback-error-80);
+            img{
+                width: 15px;
+                height: 15px;
+                text-align: center;
+            }
+        }
+        .input-success{
+            display: flex;
+            align-items:center ;
+            gap:4px;
+            color: var(--feedback-success-80);
+            img{
+                width: 15px;
+                height: 15px;
+                text-align: center;
+            }
+        }
+        
+    }
+
+}
+
+.password-container{
+    position: relative;
+    .password-eye-icon{
+        position: absolute;
+        top:39px;
+        right: 14px;
+        img{
+            width: 15px;
+            height: 15px;
+    
+        }
+
+    }
+}

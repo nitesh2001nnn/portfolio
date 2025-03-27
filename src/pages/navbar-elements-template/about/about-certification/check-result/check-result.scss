@@ -1,0 +1,78 @@
+.check-result-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .check-result-section {
+        border-radius: 25px;
+        border: 1px solid black;
+        padding: 10px 20px;
+
+        .heading {
+            color: var(--black);
+        }
+
+        .congratulation-section {
+            background-image: url("/assets/icons/congratulation.gif");
+
+            animation: playOnce 1s forwards;
+
+            @keyframes playOnce {
+                0% {
+                    background-image: url("/assets/icons/congratulation.gif");
+                }
+
+                99% {
+                    background-image: url("/assets/icons/congratulation.gif");
+                }
+
+                100% {
+                    background-image: none;
+
+                    /* This removes the GIF after the animation */
+                }
+            }
+
+
+
+
+
+
+
+
+            .heading-medium {
+                text-align: center;
+            }
+
+            .percentage-success {
+                color: var(--feedback-success-50);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+
+        .regret-section {
+            .regret-text{
+                display: flex;
+                align-items: center;
+                gap: 10px;
+
+            }
+            .heading-medium {
+                text-align: center;
+            }
+
+            .percentage-regret {
+                color: var(--feedback-error-50);
+                font-weight: bolder;
+                text-align: center;
+                
+            }
+
+
+
+        }
+
+    }
+}

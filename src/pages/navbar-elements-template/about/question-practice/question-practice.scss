@@ -1,0 +1,40 @@
+@import "../../../../global/styles/index.scss";
+
+.question-practice-wrapper{
+
+    .heading{
+        color: var(--black);
+    }
+
+    .question-practice-container{
+        border: 1px solid var(--black);
+        padding: 8px 64px;
+        border-radius: 10px;
+       
+    
+        .questions-container{
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            .question-text{
+    
+                font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                font-weight: bolder;
+            }
+            .answer-text{
+                display: flex;
+                gap: 5px;
+                color: var(--grey-80);
+    
+            }
+    
+    
+            
+    
+    
+        }
+    
+    }
+
+}
+

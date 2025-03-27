@@ -1,0 +1,65 @@
+.read-data-container{
+   
+    // min-height: 300px;
+    border: 1px solid black;
+    // border-radius: 20px;
+    padding: 64px 20px;
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    height: 100%;
+    
+
+    .first-panel{
+        border-radius: 0px 20px 20px 0px;
+        background-color: var(--white);
+        padding: 12px 0px;
+        border: 1px solid var(--black);
+        height: 100%;
+        width: 20%;
+        height: 100%;
+        // flex: 1 0 20%;
+    }
+    .second-panel{
+        border-radius: 20px 20px 20px 20px;
+        background-color: var(--white);
+        padding: 12px 0px;
+        border: 1px solid var(--black);
+        height: 200px;
+        overflow: auto;
+        width: 80%;
+        .getting-started-container{
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            .first-title{
+                #getting-started{
+                    font-size: 40px;
+                    color: black;
+                    font-weight: bolder;
+                }
+            }
+            .second-title{
+                #how-to-install{
+                    font-size: 40px;
+                    color: black;
+                    font-weight: bolder;
+                }
+            }
+            .third-title{
+                #how-to-setup{
+                    font-size: 40px;
+                    color: black;
+                    font-weight: bolder;
+                }
+            }
+            .fourth-title{
+                #how-to-make-file{
+                    font-size: 40px;
+                    color: black;
+                    font-weight: bolder;
+                }
+            }
+        }
+    }
+}

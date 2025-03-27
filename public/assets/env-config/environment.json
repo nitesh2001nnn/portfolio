@@ -1,0 +1,6 @@
+{
+    "application":"DoCodeByHeart",
+    "production":false,
+    "env":"dev",
+    "baseUrl":"http://localhost:5000"
+}
