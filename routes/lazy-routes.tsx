@@ -6,5 +6,9 @@ const LazySignup = React.lazy(
 const LazyLogin = React.lazy(
   () => import("../src/pages/authentication/login/login-screen")
 );
+const LazyResetPassword = React.lazy(
+  () =>
+    import("../src/pages/authentication/forgot-password/forgot-password-screen")
+);
 
-export { LazySignup, LazyLogin };
+export { LazySignup, LazyLogin, LazyResetPassword };

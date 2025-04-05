@@ -7,10 +7,11 @@
 }
 
 .sub-heading {
-  color: var(--grey-30);
+  color: var(--grey-40);
   font-family: "Barlow", serif;
-  font-weight: 400;
+  font-weight: 500;
   font-style: normal;
+  font-size: 0.9rem;
 }
 
 .heading-medium {
@@ -32,12 +33,14 @@
 }
 
 .text-body-xxs {
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: 500;
+  font-family: "Kanit", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+
   text-transform: none;
-  font-size: 0.75rem;
-  letter-spacing: -0.06px;
-  line-height: 1.3333333333333333;
+  font-size: 0.85rem;
+  font-weight: 400;
+  line-height: 1.0285714285714286;
 }
 
 .bold-text {
@@ -52,11 +55,21 @@
   font-weight: 700;
   font-style: normal;
   font-size: 2.7rem;
-  line-height: 1.2285714285714286;
+  line-height: 1.1285714285714286;
   text-transform: none;
   &-xs {
     font-size: 1.75rem;
     font-weight: 750;
+    line-height: 1.0285714285714286;
+  }
+  &-xxs {
+    font-size: 0.95rem;
+    font-weight: 600;
+    line-height: 1.0285714285714286;
+  }
+  &-xxxs {
+    font-size: 0.75rem;
+    font-weight: 400;
     line-height: 1.0285714285714286;
   }
 }

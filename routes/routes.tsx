@@ -1,5 +1,5 @@
 import { createBrowserRouter } from "react-router-dom";
-import { LazyLogin, LazySignup } from "./lazy-routes";
+import { LazyLogin, LazyResetPassword, LazySignup } from "./lazy-routes";
 import { Suspense } from "react";
 
 import Homepage from "../src/pages/home-page/home-page";
@@ -28,6 +28,14 @@ const routes = createBrowserRouter([
         element: (
           <Suspense>
             <LazyLogin />
+          </Suspense>
+        ),
+      },
+      {
+        path: "reset-password",
+        element: (
+          <Suspense>
+            <LazyResetPassword />
           </Suspense>
         ),
       },

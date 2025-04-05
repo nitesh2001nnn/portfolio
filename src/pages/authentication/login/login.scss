@@ -1,0 +1,51 @@
+.login-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+
+    .login-container {
+        min-width: 380px;
+        max-width: min-content;
+        border: 1px solid var(--black);
+        background-color: var(--white);
+        border-radius: 20px;
+        padding: 15px 24px;
+
+        .login-header {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .login-credential {
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+        }
+
+        .button-container {
+            margin-top: 24px;
+
+            .primary-button {
+                width: 100%;
+            }
+
+            .forgot-password {
+                margin-top: 5px;
+                text-align: center;
+                cursor: pointer;
+            }
+        }
+
+        .signup-route {
+            margin-top: 15px;
+            text-align: center;
+
+            .signup-text {
+                cursor: pointer;
+            }
+        }
+    }
+}

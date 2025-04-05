@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import Input from "./inputs";
-import {  regexConstant } from "../../helpers/regex";
+import { regexConstant } from "../../helpers/regex";
 
 type emailProps = {
   label: string;
@@ -35,53 +35,46 @@ const Emailinput = ({
     });
   };
 
-  const validateEmailField=()=>{
+  const validateEmailField = () => {
     let errorText = "";
-    let isValid= false;
+    let isValid = false;
 
-    if(parentState.isTouched){
-        if(parentState.value == ""){
-            errorText = "Email is required"
-            isValid=false
-        }
-        else if(!regexConstant.emailRegex.test(parentState.value)){
-            errorText = "Enter a valid email"
-            isValid=false
-        }
-        else{
-
-            isValid=true;
-        }
-        
-        
+    if (parentState.isTouched) {
+      if (parentState.value == "") {
+        errorText = "Email is required";
+        isValid = false;
+      } else if (!regexConstant.emailRegex.test(parentState.value)) {
+        errorText = "Enter a valid email";
+        isValid = false;
+      } else {
+        isValid = true;
+      }
     }
-    parentStateChanger((prev:emailProps)=>{
-        return({
-            ...prev,
-            error:errorText,
-            isValid:isValid
-        })
-    })
-  }
+    parentStateChanger((prev: emailProps) => {
+      return {
+        ...prev,
+        error: errorText,
+        isValid: isValid,
+      };
+    });
+  };
 
-  const onEmailBlur=()=>{
-    parentStateChanger((prev:emailProps)=>{
-        return({
-            ...prev,
-            isTouched:true
-        })
-    })
-  }
-
+  const onEmailBlur = () => {
+    parentStateChanger((prev: emailProps) => {
+      return {
+        ...prev,
+        isTouched: true,
+      };
+    });
+  };
 
   useEffect(() => {
     console.log("parentState", parentState);
   }, [parentState]);
 
-  useEffect(()=>{
-    
+  useEffect(() => {
     validateEmailField();
-  },[parentState.isTouched,parentState.value])
+  }, [parentState?.isTouched, parentState.value]);
   return (
     <>
       <Input
