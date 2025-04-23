@@ -1,57 +1,42 @@
-import { useRef, useState } from "react";
+import { useState } from "react";
 import "./navbar.scss";
-import About from "../navbar-elements-template/about/about";
-import OverlayElement from "../../global/overlay/overlay";
-import { Positions } from "../../global/constants/helpers";
 
 const Navbar = () => {
-  const [aboutMe, setAboutMe] = useState(false);
-  const aboutRef = useRef(null);
-  const navbarRef=useRef(null);
-  const[aboutid,setAboutID]=useState()
-  const handleOpenSide = () => {
-    setAboutMe(true);
+  const [isBreadCombOpen, setBreadCombOpen] = useState(false);
+
+  const handleOpenBd = () => {
+    setBreadCombOpen(!isBreadCombOpen);
   };
-
-  const handleAboutContent=(id:any)=>{
-    setAboutID(id)
-  }
-
   return (
     <>
-      <div className="navbar-container"  ref={navbarRef}>
-        <div className="ul-tag">
-          <span>Home</span>
-          <span>Documentations</span>
-          <span onClick={handleOpenSide} ref={aboutRef} className="about">
-            About
-          </span>
-          <span>Dashboard</span>
+      <div className="navbar-container">
+        <div className="logo-container">
+          <img src="./assets/icons/logo_1.jpeg"></img>
         </div>
-        {aboutMe && (
-        <OverlayElement
-          refElement={aboutRef}
-          overlyClick={() => setAboutMe(false)}
-          position={Positions.bottom}
+        <div
+          className={`${
+            isBreadCombOpen ? "bottom-side-links" : "right-side-links"
+          }`}
         >
-          <div className="ref-container" >
-            <span className="dropdown-content" onClick={()=>handleAboutContent(1)}>About Certification</span>
-            <span className="dropdown-content">How to Read Documentation</span>
+          <div className="li-items text-body-normal ">
+            <span>About</span>
+            <span>Learn</span>
+            <span>Portfolia</span>
+            <span>Blog</span>
+            <span>Contact</span>
           </div>
-        </OverlayElement>
-      )}
+          <div className="social-media-items">
+            <img src="./assets/icons/link_1.png"></img>
+            <img src="./assets/icons/insta_2.png"></img>
+            <img className="wp" src="./assets/icons/wp.jpg"></img>
+          </div>
+        </div>
+        <img
+          src="./assets/icons/menu_1.png"
+          className="bread-cumb"
+          onClick={handleOpenBd}
+        ></img>
       </div>
-      
-      {/* <div className='about-content' onClick={()=>setAboutMe(false)}>
-        <About ref={aboutRef}/>
-        </div> */}
-         {aboutid &&
-          <div className='about-content' onClick={()=>setAboutID(null)}>
-            <About id={aboutid} ref={navbarRef} />
-
-          </div>
-}
-        
     </>
   );
 };

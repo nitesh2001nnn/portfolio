@@ -5,7 +5,6 @@ import PasswordInput from "../../../global/components/inputs/password-input";
 import { useNavigate } from "react-router-dom";
 
 const Login = (props: any) => {
-<<<<<<< HEAD
   const [email, setEmail] = useState({
     value: "",
     isTouched: false,
@@ -49,9 +48,7 @@ const Login = (props: any) => {
       </div>
     </div>
   );
-=======
   return <div className="login-wrapper">login-name</div>;
->>>>>>> 3e57cea (file should push)
 };
 
 export default Login;
