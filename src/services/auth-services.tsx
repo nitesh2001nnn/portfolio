@@ -10,3 +10,12 @@ export const signupApi = (params: any) => {
       params.errorCB(err);
     });
 };
+
+export const verifyToken = (params: any) => {
+  axiosInstance
+    .post(`${config.baseUrl}${API_CONFIG.VERIFY_TOKEN}`, params.payload)
+    .then((res) => params.successCB(res))
+    .catch((err) => {
+      params.errorCB(err);
+    });
+};

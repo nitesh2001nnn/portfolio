@@ -1,0 +1,26 @@
+.project-container {
+  .project-form-cont {
+    max-height: calc(600px - 138px);
+    overflow: auto;
+    .project-data-form {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+
+      .skill-container {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        .btn {
+          margin-top: calc(18px);
+        }
+      }
+    }
+  }
+  .btn-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+  }
+}

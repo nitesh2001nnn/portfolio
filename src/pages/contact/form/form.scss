@@ -1,0 +1,22 @@
+form {
+  height: 100%;
+  .form-container {
+    display: flex;
+    gap: 60px;
+    .input-email-container {
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+      flex: 1;
+    }
+    .text-area {
+      flex: 1;
+      //   height: 100%;
+    }
+  }
+  .button-container {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+  }
+}

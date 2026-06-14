@@ -1,0 +1,103 @@
+.resume-container {
+  .resume-upload-section {
+    width: 100%;
+    background-color: var(--grey-40);
+    padding: 12px 0px;
+  }
+  .resume-divider {
+    display: flex;
+    gap: 10px;
+    padding: 12px 32px;
+    .resume-maker {
+      .resume-title {
+        .resume-head {
+          padding: 10px 0px;
+        }
+        .border-line {
+          height: 1px;
+          background-color: var(--black);
+          width: 100%;
+          margin-bottom: 10px;
+        }
+        .skill-container {
+          margin-bottom: 5px;
+          display: flex;
+
+          .skillset {
+            display: flex;
+            gap: 5px;
+            flex-wrap: wrap;
+            .skills-button {
+              padding: 8px 12px;
+              background-color: var(--grey-80);
+              border-radius: 50px;
+              margin: 0px 5px;
+              color: var(--white);
+            }
+          }
+        }
+        .company-wrap {
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+          .company-container {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+          }
+        }
+        .project-wrapper {
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+          .project-container {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+          }
+        }
+
+        .education-details {
+          display: flex;
+          justify-content: space-between;
+        }
+      }
+    }
+    .left-side-resume {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      border-left: 1px solid var(--black);
+      padding: 5px 10px;
+      .img-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        img {
+          width: 50%;
+          object-fit: contain;
+          border-radius: 50%;
+        }
+        .profile-name,
+        .role {
+          text-align: center;
+        }
+      }
+      .contact-details {
+        display: flex;
+        gap: 5px;
+        flex-direction: column;
+
+        .social-profiles {
+          display: flex;
+          align-items: center;
+          img {
+            width: 30px;
+            height: 30px;
+          }
+        }
+      }
+    }
+  }
+}

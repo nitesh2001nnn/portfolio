@@ -1,5 +1,13 @@
 import { createBrowserRouter } from "react-router-dom";
-import { LazyLogin, LazyResetPassword, LazySignup } from "./lazy-routes";
+import {
+  LazyAbout,
+  LazyLogin,
+  LazyPortFolio,
+  LazyResetPassword,
+  LazySignup,
+  LazyContact,
+  LazyResume,
+} from "./lazy-routes";
 import { Suspense } from "react";
 
 import Homepage from "../src/pages/home-page/home-page";
@@ -16,26 +24,34 @@ const routes = createBrowserRouter([
     element: <Appbase />,
     children: [
       {
-        path: "signup",
+        path: "portfolio",
         element: (
           <Suspense>
-            <LazySignup />
+            <LazyPortFolio />
           </Suspense>
         ),
       },
       {
-        path: "login",
+        path: "about",
         element: (
           <Suspense>
-            <LazyLogin />
+            <LazyAbout />
           </Suspense>
         ),
       },
       {
-        path: "reset-password",
+        path: "contact",
         element: (
           <Suspense>
-            <LazyResetPassword />
+            <LazyContact />
+          </Suspense>
+        ),
+      },
+      {
+        path: "resume",
+        element: (
+          <Suspense>
+            <LazyResume />
           </Suspense>
         ),
       },

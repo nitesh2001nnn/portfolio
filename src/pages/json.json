@@ -1,0 +1,293 @@
+{
+  "data": [
+    {
+      "id": 3,
+      "documentId": "pq4rbxy8dshnv465nklk30pm",
+      "createdAt": "2025-06-25T19:39:23.956Z",
+      "updatedAt": "2025-06-25T19:48:34.980Z",
+      "publishedAt": "2025-06-25T19:48:35.074Z",
+      "attributes": [
+        {
+          "id": 13,
+          "section": "portfolio",
+          "data": [
+            {
+              "id": 13,
+              "type": "2",
+              "data": [
+                {
+                  "id": 25,
+                  "customid": "21",
+                  "img": {
+                    "id": 1,
+                    "documentId": "hjvbqgmw7kirxq60ay20bav8",
+                    "name": "chatapp.png",
+                    "alternativeText": "chatapp",
+                    "caption": null,
+                    "width": 700,
+                    "height": 500,
+                    "formats": {
+                      "small": {
+                        "ext": ".png",
+                        "url": "/uploads/small_chatapp_a5798e8a57.png",
+                        "hash": "small_chatapp_a5798e8a57",
+                        "mime": "image/png",
+                        "name": "small_chatapp.png",
+                        "path": null,
+                        "size": 128.86,
+                        "width": 500,
+                        "height": 357,
+                        "sizeInBytes": 128864
+                      },
+                      "thumbnail": {
+                        "ext": ".png",
+                        "url": "/uploads/thumbnail_chatapp_a5798e8a57.png",
+                        "hash": "thumbnail_chatapp_a5798e8a57",
+                        "mime": "image/png",
+                        "name": "thumbnail_chatapp.png",
+                        "path": null,
+                        "size": 26.49,
+                        "width": 218,
+                        "height": 156,
+                        "sizeInBytes": 26492
+                      }
+                    },
+                    "hash": "chatapp_a5798e8a57",
+                    "ext": ".png",
+                    "mime": "image/png",
+                    "size": 52.49,
+                    "url": "/uploads/chatapp_a5798e8a57.png",
+                    "previewUrl": null,
+                    "provider": "local",
+                    "provider_metadata": null,
+                    "createdAt": "2025-06-17T19:27:25.324Z",
+                    "updatedAt": "2025-06-23T19:41:51.843Z",
+                    "publishedAt": "2025-06-17T19:27:25.324Z"
+                  }
+                },
+                {
+                  "id": 26,
+                  "customid": "22",
+                  "img": {
+                    "id": 2,
+                    "documentId": "jwglprvg8uu8bz3zdzdorbvl",
+                    "name": "—Pngtree—start up team working flat_5870928.png",
+                    "alternativeText": null,
+                    "caption": null,
+                    "width": 2000,
+                    "height": 2000,
+                    "formats": {
+                      "large": {
+                        "ext": ".png",
+                        "url": "/uploads/large_Pngtree_start_up_team_working_flat_5870928_98d028f9aa.png",
+                        "hash": "large_Pngtree_start_up_team_working_flat_5870928_98d028f9aa",
+                        "mime": "image/png",
+                        "name": "large_—Pngtree—start up team working flat_5870928.png",
+                        "path": null,
+                        "size": 210.97,
+                        "width": 1000,
+                        "height": 1000,
+                        "sizeInBytes": 210966
+                      },
+                      "small": {
+                        "ext": ".png",
+                        "url": "/uploads/small_Pngtree_start_up_team_working_flat_5870928_98d028f9aa.png",
+                        "hash": "small_Pngtree_start_up_team_working_flat_5870928_98d028f9aa",
+                        "mime": "image/png",
+                        "name": "small_—Pngtree—start up team working flat_5870928.png",
+                        "path": null,
+                        "size": 95.8,
+                        "width": 500,
+                        "height": 500,
+                        "sizeInBytes": 95801
+                      },
+                      "medium": {
+                        "ext": ".png",
+                        "url": "/uploads/medium_Pngtree_start_up_team_working_flat_5870928_98d028f9aa.png",
+                        "hash": "medium_Pngtree_start_up_team_working_flat_5870928_98d028f9aa",
+                        "mime": "image/png",
+                        "name": "medium_—Pngtree—start up team working flat_5870928.png",
+                        "path": null,
+                        "size": 159.47,
+                        "width": 750,
+                        "height": 750,
+                        "sizeInBytes": 159473
+                      },
+                      "thumbnail": {
+                        "ext": ".png",
+                        "url": "/uploads/thumbnail_Pngtree_start_up_team_working_flat_5870928_98d028f9aa.png",
+                        "hash": "thumbnail_Pngtree_start_up_team_working_flat_5870928_98d028f9aa",
+                        "mime": "image/png",
+                        "name": "thumbnail_—Pngtree—start up team working flat_5870928.png",
+                        "path": null,
+                        "size": 23.76,
+                        "width": 156,
+                        "height": 156,
+                        "sizeInBytes": 23755
+                      }
+                    },
+                    "hash": "Pngtree_start_up_team_working_flat_5870928_98d028f9aa",
+                    "ext": ".png",
+                    "mime": "image/png",
+                    "size": 72.26,
+                    "url": "/uploads/Pngtree_start_up_team_working_flat_5870928_98d028f9aa.png",
+                    "previewUrl": null,
+                    "provider": "local",
+                    "provider_metadata": null,
+                    "createdAt": "2025-06-17T19:28:05.339Z",
+                    "updatedAt": "2025-06-18T19:30:53.786Z",
+                    "publishedAt": "2025-06-17T19:28:05.339Z"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 14,
+          "section": "home",
+          "data": [
+            {
+              "id": 14,
+              "type": "1",
+              "data": [
+                {
+                  "id": 27,
+                  "customid": "11",
+                  "img": {
+                    "id": 2,
+                    "documentId": "jwglprvg8uu8bz3zdzdorbvl",
+                    "name": "—Pngtree—start up team working flat_5870928.png",
+                    "alternativeText": null,
+                    "caption": null,
+                    "width": 2000,
+                    "height": 2000,
+                    "formats": {
+                      "large": {
+                        "ext": ".png",
+                        "url": "/uploads/large_Pngtree_start_up_team_working_flat_5870928_98d028f9aa.png",
+                        "hash": "large_Pngtree_start_up_team_working_flat_5870928_98d028f9aa",
+                        "mime": "image/png",
+                        "name": "large_—Pngtree—start up team working flat_5870928.png",
+                        "path": null,
+                        "size": 210.97,
+                        "width": 1000,
+                        "height": 1000,
+                        "sizeInBytes": 210966
+                      },
+                      "small": {
+                        "ext": ".png",
+                        "url": "/uploads/small_Pngtree_start_up_team_working_flat_5870928_98d028f9aa.png",
+                        "hash": "small_Pngtree_start_up_team_working_flat_5870928_98d028f9aa",
+                        "mime": "image/png",
+                        "name": "small_—Pngtree—start up team working flat_5870928.png",
+                        "path": null,
+                        "size": 95.8,
+                        "width": 500,
+                        "height": 500,
+                        "sizeInBytes": 95801
+                      },
+                      "medium": {
+                        "ext": ".png",
+                        "url": "/uploads/medium_Pngtree_start_up_team_working_flat_5870928_98d028f9aa.png",
+                        "hash": "medium_Pngtree_start_up_team_working_flat_5870928_98d028f9aa",
+                        "mime": "image/png",
+                        "name": "medium_—Pngtree—start up team working flat_5870928.png",
+                        "path": null,
+                        "size": 159.47,
+                        "width": 750,
+                        "height": 750,
+                        "sizeInBytes": 159473
+                      },
+                      "thumbnail": {
+                        "ext": ".png",
+                        "url": "/uploads/thumbnail_Pngtree_start_up_team_working_flat_5870928_98d028f9aa.png",
+                        "hash": "thumbnail_Pngtree_start_up_team_working_flat_5870928_98d028f9aa",
+                        "mime": "image/png",
+                        "name": "thumbnail_—Pngtree—start up team working flat_5870928.png",
+                        "path": null,
+                        "size": 23.76,
+                        "width": 156,
+                        "height": 156,
+                        "sizeInBytes": 23755
+                      }
+                    },
+                    "hash": "Pngtree_start_up_team_working_flat_5870928_98d028f9aa",
+                    "ext": ".png",
+                    "mime": "image/png",
+                    "size": 72.26,
+                    "url": "/uploads/Pngtree_start_up_team_working_flat_5870928_98d028f9aa.png",
+                    "previewUrl": null,
+                    "provider": "local",
+                    "provider_metadata": null,
+                    "createdAt": "2025-06-17T19:28:05.339Z",
+                    "updatedAt": "2025-06-18T19:30:53.786Z",
+                    "publishedAt": "2025-06-17T19:28:05.339Z"
+                  }
+                },
+                {
+                  "id": 28,
+                  "customid": "12",
+                  "img": {
+                    "id": 1,
+                    "documentId": "hjvbqgmw7kirxq60ay20bav8",
+                    "name": "chatapp.png",
+                    "alternativeText": "chatapp",
+                    "caption": null,
+                    "width": 700,
+                    "height": 500,
+                    "formats": {
+                      "small": {
+                        "ext": ".png",
+                        "url": "/uploads/small_chatapp_a5798e8a57.png",
+                        "hash": "small_chatapp_a5798e8a57",
+                        "mime": "image/png",
+                        "name": "small_chatapp.png",
+                        "path": null,
+                        "size": 128.86,
+                        "width": 500,
+                        "height": 357,
+                        "sizeInBytes": 128864
+                      },
+                      "thumbnail": {
+                        "ext": ".png",
+                        "url": "/uploads/thumbnail_chatapp_a5798e8a57.png",
+                        "hash": "thumbnail_chatapp_a5798e8a57",
+                        "mime": "image/png",
+                        "name": "thumbnail_chatapp.png",
+                        "path": null,
+                        "size": 26.49,
+                        "width": 218,
+                        "height": 156,
+                        "sizeInBytes": 26492
+                      }
+                    },
+                    "hash": "chatapp_a5798e8a57",
+                    "ext": ".png",
+                    "mime": "image/png",
+                    "size": 52.49,
+                    "url": "/uploads/chatapp_a5798e8a57.png",
+                    "previewUrl": null,
+                    "provider": "local",
+                    "provider_metadata": null,
+                    "createdAt": "2025-06-17T19:27:25.324Z",
+                    "updatedAt": "2025-06-23T19:41:51.843Z",
+                    "publishedAt": "2025-06-17T19:27:25.324Z"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "pagination": {
+      "page": 1,
+      "pageSize": 25,
+      "pageCount": 1,
+      "total": 1
+    }
+  }
+}

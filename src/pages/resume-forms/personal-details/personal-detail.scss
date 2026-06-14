@@ -1,0 +1,26 @@
+.personal-detail-form {
+  height: 100%; // <-- Ensure it fills the parent
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  overflow: hidden;
+
+  .personal-detail-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    overflow-y: auto;
+    max-height: 400px;
+
+    .skill-container {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      button {
+        margin-top: 15px;
+      }
+    }
+  }
+  .btn-container {
+  }
+}

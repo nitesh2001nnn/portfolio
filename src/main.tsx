@@ -5,6 +5,8 @@ import App from "./App.tsx";
 import { RouterProvider } from "react-router-dom";
 import routes from "../routes/routes.tsx";
 import config from "./helpers/config.tsx";
+import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
+const queryClientPro = new QueryClient();
 
 const getEnvData = async () => {
   try {
@@ -22,9 +24,13 @@ const getEnvData = async () => {
 getEnvData();
 
 createRoot(document.getElementById("root")!).render(
-  <StrictMode>
-    <RouterProvider router={routes} />
+  // <StrictMode>
+  <>
+    <QueryClientProvider client={queryClientPro}>
+      <RouterProvider router={routes} />
 
-    <App />
-  </StrictMode>
+      <App />
+    </QueryClientProvider>
+  </>,
+  // </StrictMode>
 );

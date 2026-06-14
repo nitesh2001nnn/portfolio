@@ -1,6 +1,6 @@
 {
-    "application":"DoCodeByHeart",
-    "production":false,
-    "env":"dev",
-    "baseUrl":"http://localhost:5000"
+  "application": "Portfolio",
+  "production": false,
+  "env": "dev",
+  "baseUrl": "http://localhost:5000"
 }

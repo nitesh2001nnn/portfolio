@@ -1,5 +1,6 @@
 .navbar-container {
   border: 1px solid black;
+  box-sizing: border-box;
   padding: 5px 128px;
   background-color: rgb(22, 20, 20);
   display: flex;
@@ -83,6 +84,8 @@
   .navbar-container {
     padding: 5px 20px;
     position: relative;
+    box-sizing: border-box;
+
     .right-side-links {
       .li-items {
         display: none;
@@ -94,11 +97,11 @@
     .bottom-side-links {
       position: absolute;
       height: 100vh;
-      display: flex;
-      flex-direction: column;
+      z-index: 1;
       gap: 20px;
       top: 100%;
-      width: 100%;
+      min-width: 100%;
+      max-width: 100%;
       background-color: var(--black);
       left: 0;
       color: var(--white);

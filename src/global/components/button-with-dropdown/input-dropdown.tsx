@@ -10,14 +10,21 @@ type dropdownType = {
   value: string;
 };
 
+type selectedItem = {
+  value: { value: string; label: string; id: number };
+};
+
 interface dropdownProps {
+  name: string;
   placeHolder: string;
   label: string;
+
   dropdownData: dropdownType[];
   optionClick: (item: any) => void;
-  onDropdownBlur?: () => void;
+  onDropdownBlur?: (item: any) => void;
   error?: string;
   onRemoveItem?: () => void;
+  selectedItemData?: selectedItem;
 }
 
 const Inputdropdown = ({
@@ -28,13 +35,15 @@ const Inputdropdown = ({
   onDropdownBlur,
   error,
   onRemoveItem,
+  selectedItemData,
+  name,
 }: dropdownProps) => {
   const [isDropdownOpen, setDropdownOpen] = useState(false);
   const drodownRef = useRef<HTMLDivElement>(null);
   const [selectedItem, setSelectedItem] = useState<any>({
-    value: "",
-    label: "",
-    isValid: false,
+    value: selectedItemData?.value.value ? selectedItemData?.value.value : "",
+    label: selectedItemData?.value.label ? selectedItemData?.value.label : "",
+    isValid: selectedItemData?.value.value ? true : false,
   });
 
   const handleDropdownOpen = () => {
@@ -55,6 +64,12 @@ const Inputdropdown = ({
     optionClick(item);
   };
 
+  const handleDropBlur = (e: React.FocusEvent<HTMLDivElement>) => {
+    if (onDropdownBlur) {
+      onDropdownBlur(e);
+    }
+  };
+
   const handleRemoveItem = (event: any) => {
     event.stopPropagation();
     setSelectedItem({ value: "", label: "", isValid: false });
@@ -67,16 +82,17 @@ const Inputdropdown = ({
 
   return (
     <div className="dropdown-wrapper">
-      <div className="dropdown-container" >
+      <div className="dropdown-container">
         <Input
           placeholder={placeHolder}
           label={label}
           ref={drodownRef}
           value={selectedItem?.label}
-          onBlur={onDropdownBlur}
+          onBlur={(e: React.FocusEvent<HTMLDivElement>) => handleDropBlur(e)}
           errorText={error}
           isValid={selectedItem.isValid}
           onClick={handleDropdownOpen}
+          name={name}
         ></Input>
         <img
           src="global/icons/dropdown-down.png"

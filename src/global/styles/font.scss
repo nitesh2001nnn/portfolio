@@ -1,9 +1,10 @@
 .heading {
-  font-family: "Anton", serif;
+  font-family: "Kanit", sans-serif;
   font-weight: 800;
   font-style: normal;
-  font-size: 2.8rem;
+  font-size: 5.8rem;
   color: var(--white);
+  line-height: 4.5rem;
 }
 
 .sub-heading {
@@ -27,7 +28,7 @@
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 300;
   text-transform: none;
-  font-size: 1rem;
+  font-size: 1.45rem;
   letter-spacing: -0.07px;
   line-height: 1.4285714285714286;
 }
@@ -43,9 +44,9 @@
 
 .text-body-xxs {
   font-family: "Kanit", sans-serif;
-  font-weight: 700;
-  font-style: normal;
 
+  font-style: normal;
+  letter-spacing: 2px;
   text-transform: none;
   font-size: 0.85rem;
   font-weight: 400;
@@ -56,19 +57,20 @@
   font-family: "Kanit", sans-serif;
   font-weight: 700;
   font-style: normal;
-  font-size: 3.8rem;
+  font-size: 4rem;
+  line-height: 2.5rem;
 }
 
 .bold-text-medium {
   font-family: "Kanit", sans-serif;
   font-weight: 700;
   font-style: normal;
-  font-size: 2.7rem;
+  font-size: 1.9rem;
   line-height: 1.1285714285714286;
   text-transform: none;
   &-xs {
-    font-size: 1.75rem;
-    font-weight: 750;
+    font-size: 1.24rem;
+    font-weight: 600;
     line-height: 1.0285714285714286;
   }
   &-xxs {
@@ -92,12 +94,27 @@
   color: var(--grey-70);
 }
 
+.fancy-text {
+  font-family: "Anton", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 3rem;
+  color: var(--grey-80);
+
+  &:hover {
+    color: var(--black);
+  }
+}
+
 @media screen and (min-width: 700px) and (max-width: 1200px) {
   .bold-text-medium {
     font-size: 1.46rem;
   }
   .sub-heading {
     font-size: 0.8rem;
+  }
+  .text-body-xxs {
+    font-size: 0.5rem;
   }
 }
 
@@ -107,5 +124,18 @@
   }
   .sub-heading {
     font-size: 0.4rem;
+  }
+  .fancy-text {
+    font-size: 1rem;
+  }
+  .text-body-xxs {
+    font-size: 0.3rem;
+  }
+  .heading {
+    font-size: 3.2rem;
+    line-height: 2.9rem;
+  }
+  .text-body-normal {
+    font-size: 1.2rem;
   }
 }

@@ -26,6 +26,10 @@ const Emailinput = ({
   //     isValid: false,
   //   });
 
+  useEffect(() => {
+    console.log("parentStatecjhanger", parentStateChanger);
+  }, [parentStateChanger]);
+
   const onHandleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     parentStateChanger((prevState: emailProps) => {
       return {
