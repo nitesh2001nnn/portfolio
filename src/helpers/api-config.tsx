@@ -4,5 +4,5 @@ export const API_CONFIG = {
   CONTACT_ME: "/api/contact",
   BASEURL: "http://localhost:1337",
   PORTFOLIO:
-    "/api/portfolio-datas?populate[project][populate][data][populate]=*",
+    "/api/portfolio-datas?populate[projects][populate][data][populate]=*&populate[cd_1][populate][data][populate]=*",
 };

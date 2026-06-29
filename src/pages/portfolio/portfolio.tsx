@@ -5,51 +5,31 @@ import Lefttext from "../WebTemplates/left-text-right-img/left-text";
 import Secondpage from "../WebTemplates/second-page/second-page";
 import "./portfolio.scss";
 import { portfolio_page_service } from "../services/home-page";
+import { useEffect, useState } from "react";
+import { API_CONFIG } from "../../helpers/api-config";
 
 const Portfolio = () => {
-  const CarouselData = [
-    {
-      id: 1,
-      src: "./assets/icons/coder.jpeg",
-      label: "Real Time Chat App",
-      value: "Chatting with anyone with creating the room",
-    },
-    {
-      id: 2,
-      src: "./assets/icons/coder.jpeg",
-      label: "Tutorial WebApp",
-      value: "Learn the coding in just your fingertip's",
-    },
-    {
-      id: 3,
-      src: "./assets/icons/coder.jpeg",
-      label: "Tutorial WebApp",
-      value: "Learn the coding in just your fingertip's",
-    },
-    {
-      id: 4,
-      src: "./assets/icons/coder.jpeg",
-      label: "Real Time Chat App",
-      value: "Chatting with anyone with creating the room",
-    },
-    {
-      id: 5,
-      src: "./assets/icons/coder.jpeg",
-      label: "Tutorial WebApp",
-      value: "Learn the coding in just your fingertip's",
-    },
-    {
-      id: 6,
-      src: "./assets/icons/coder.jpeg",
-      label: "Tutorial WebApp",
-      value: "Learn the coding in just your fingertip's",
-    },
-  ];
-
+  const [carouselData, setCarouselData] = useState([]);
   const { data } = useQuery({
     queryKey: ["portfolio"],
     queryFn: portfolio_page_service,
   });
+
+  useEffect(() => {
+    if (data) {
+      const DataSetForCarousel = data?.data?.[0]?.cd_1[0].data.map(
+        (item: any, index: any) => {
+          return {
+            id: index,
+            src: `${API_CONFIG.BASEURL}${item.img.url}`,
+            label: item.title,
+            value: item.link,
+          };
+        },
+      );
+      setCarouselData(DataSetForCarousel);
+    }
+  }, [data]);
 
   console.log("data in portfolio", data?.data?.[0]);
   return (
@@ -59,11 +39,11 @@ const Portfolio = () => {
           {data?.data?.[0] && <Lefttext data={data?.data?.[0]} />}
         </div>
         <div className="right-div">
-          <Fullscreencarousel data={CarouselData} />
+          <Fullscreencarousel data={carouselData} />
         </div>
       </div>
 
-      <Secondpage />
+      <Secondpage data={data?.data?.[0]} />
     </div>
   );
 };

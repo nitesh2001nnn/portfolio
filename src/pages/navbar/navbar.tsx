@@ -1,5 +1,7 @@
 import { useState } from "react";
 import "./navbar.scss";
+import { navbarElement } from "./constant/navbar-constant";
+import { useNavigate } from "react-router-dom";
 
 const Navbar = () => {
   const [isBreadCombOpen, setBreadCombOpen] = useState(false);
@@ -7,6 +9,8 @@ const Navbar = () => {
   const handleOpenBd = () => {
     setBreadCombOpen(!isBreadCombOpen);
   };
+
+  const navigate = useNavigate();
   return (
     <>
       <div className="navbar-container">
@@ -19,11 +23,13 @@ const Navbar = () => {
           }`}
         >
           <div className="li-items text-body-normal ">
-            <span>About</span>
-            <span>Learn</span>
-            <span>Portfolia</span>
-            <span>Blog</span>
-            <span>Contact</span>
+            {navbarElement.map((itx, ind) => {
+              return (
+                <span key={ind} onClick={() => navigate(itx.link)}>
+                  {itx.label}
+                </span>
+              );
+            })}
           </div>
           <div className="social-media-items">
             <img src="./assets/icons/link_1.png"></img>

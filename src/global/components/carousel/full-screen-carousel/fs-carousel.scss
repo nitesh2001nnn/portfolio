@@ -8,7 +8,6 @@
   overflow: hidden;
   position: relative;
   border-radius: 50px;
-  
 
   .inner-div-container {
     display: flex;
@@ -46,9 +45,8 @@
       transition: transform 0.8s ease-in-out;
 
       .small-pixels-div {
-        min-width: 100px;
+        width: 150px;
         // Each slide takes full width of outer-container
-        max-width: 100%;
 
         &.active {
           img {

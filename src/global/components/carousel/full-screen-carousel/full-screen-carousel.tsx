@@ -13,6 +13,9 @@ interface carouselData {
 }
 
 const Fullscreencarousel = ({ data }: carouselData) => {
+  useEffect(() => {
+    console.log("data in carousel component", data);
+  }, [data]);
   const [activeIndex, setActiveIndex] = useState(0);
   const containerRef = useRef<HTMLDivElement>(null);
   const childRef = useRef<HTMLDivElement>(null);
@@ -47,7 +50,7 @@ const Fullscreencarousel = ({ data }: carouselData) => {
       handleIncreament();
     }, 2000);
     return () => clearInterval(interval);
-  }, []);
+  }, [data.length]);
 
   useEffect(() => {
     console.log("active index", activeIndex);

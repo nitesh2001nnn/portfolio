@@ -1,3 +1,4 @@
+import { API_CONFIG } from "../../../helpers/api-config";
 import "./left-text.scss";
 
 interface leftTextProps {
@@ -17,16 +18,20 @@ const Lefttext = ({ buttonData, data }: leftTextProps) => {
             {data?.description}
           </span>
           <span className="fourth-sub-content text-body-xxs ">
-            Worked for Jio since 1.8 years , in which i learn how to build
-            project as a project in industry level
+            Worked in Jio for 2.8 years+ , in which i learn how to build project
+            as a project in industry level
           </span>
         </div>
         <div className="button-containers">
-          {data?.data?.map((item, index) => {
+          {buttonData?.map((item, index) => {
             return (
-              <div className="btn-wrap" key={index}>
-                <img src={`http://localhost:1337${item?.img?.url}`}></img>
-                <span>{item?.value}</span>
+              <div
+                className="btn-wrap"
+                key={index}
+                onClick={() => window.open(item.url)}
+              >
+                <img src={`${API_CONFIG.BASEURL}${item?.img}`}></img>
+                <span>{item?.name}</span>
               </div>
             );
           })}
@@ -44,9 +49,11 @@ const Lefttext = ({ buttonData, data }: leftTextProps) => {
         </div> */}
       </div>
 
-      <div className="image-side">
-        <img src={`http://localhost:1337${data?.img?.url}`}></img>
-      </div>
+      {data?.img?.url && (
+        <div className="image-side">
+          <img src={`${API_CONFIG.BASEURL}${data?.img?.url}`}></img>
+        </div>
+      )}
     </div>
   );
 };

@@ -13,10 +13,6 @@ const FirstAnimatedPage = (props: any) => {
     setLeftSideWidth(`${clampedRegion}%`);
   };
 
-  useEffect(() => {
-    console.log("props.data", props);
-  }, [props]);
-
   return (
     <div
       className="animated-wrapper"
@@ -31,15 +27,15 @@ const FirstAnimatedPage = (props: any) => {
           <div className="inside-left">
             <div className="travel-container">
               <span className="travel-text fancy-text">
-                {props?.headerData?.[0].title}
+                {props.data?.headerData?.[0].title}
               </span>
               <span className=" travel-mid-text text-body-xxs">
-                {props?.headerData?.[0].description}
+                {props.data?.headerData?.[0].description}
               </span>
             </div>
             <div className="img-container-left">
               <img
-                src={`http://localhost:1337${props?.headerData?.[0].image.url}`}
+                src={`http://localhost:1337${props.data?.headerData?.[0].image.url}`}
               ></img>
             </div>
           </div>
@@ -48,13 +44,15 @@ const FirstAnimatedPage = (props: any) => {
           <div className="inside-right">
             <div className="img-container-right">
               <img
-                src={`http://localhost:1337${props?.headerData?.[1].image.url}`}
+                src={`http://localhost:1337${props.data?.headerData?.[1].image.url}`}
               ></img>
             </div>
             <div className="coder-container">
-              <span className="fancy-text">{props?.headerData?.[1].title}</span>
+              <span className="fancy-text">
+                {props.data?.headerData?.[1].title}
+              </span>
               <span className=" code-mid-text text-body-xxs">
-                {props?.headerData?.[1].description}
+                {props.data?.headerData?.[1].description}
               </span>
             </div>
           </div>
