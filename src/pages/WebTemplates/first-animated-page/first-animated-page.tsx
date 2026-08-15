@@ -1,6 +1,7 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import { useEffect, useState } from "react";
 import "./first-animated-page.scss";
+import { API_CONFIG } from "../../../helpers/api-config";
 
 const FirstAnimatedPage = (props: any) => {
   const [leftSideWidth, setLeftSideWidth] = useState("50%");
@@ -35,7 +36,7 @@ const FirstAnimatedPage = (props: any) => {
             </div>
             <div className="img-container-left">
               <img
-                src={`http://localhost:1337${props.data?.headerData?.[0].image.url}`}
+                src={`${API_CONFIG.BASEURL}${props.data?.headerData?.[0].image.url}`}
               ></img>
             </div>
           </div>
@@ -44,7 +45,7 @@ const FirstAnimatedPage = (props: any) => {
           <div className="inside-right">
             <div className="img-container-right">
               <img
-                src={`http://localhost:1337${props.data?.headerData?.[1].image.url}`}
+                src={`${API_CONFIG.BASEURL}${props.data?.headerData?.[1].image.url}`}
               ></img>
             </div>
             <div className="coder-container">
