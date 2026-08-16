@@ -29,3 +29,31 @@
     --feedback-success-80:#135610;
     --feedback-success-50:#25ab21;
 }
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --white: #121212;
+    --black: #ffffff;
+    --temp-background: rgba(255, 255, 255, 0.1);
+
+    --grey-100: #ffffff;
+    --grey-90: #f3f4f6;
+    --grey-80: #e5e7eb;
+    --grey-70: #d1d5db;
+    --grey-65: #9ca3af;
+    --grey-60: #9ca3af;
+    --grey-50: #6b7280;
+    --grey-40: #374151;
+    --grey-35: #1f2937;
+    --grey-30: #1f2937;
+    --grey-20: #111827;
+    --grey-15: #0f172a;
+    --grey-10: #0b0f19;
+    --grey-500: #9ca3af;
+
+    --feedback-error-80: #fca5a5;
+    --feedback-error-50: #ef4444;
+    --feedback-success-80: #86efac;
+    --feedback-success-50: #22c55e;
+  }
+}
