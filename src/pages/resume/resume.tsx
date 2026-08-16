@@ -6,6 +6,7 @@ import { useEffect, useState } from "react";
 import Modal from "../../global/components/modal/modal";
 import Resumeforms from "../resume-forms/resume-forms";
 
+
 const resumeData: any = [
   {
     id: 1,
@@ -220,9 +221,9 @@ const Resume = () => {
                     })}
                   <div className="company-wrap">
                     {item.id == 3 &&
-                      item.companies.map((citem, cid) => {
+                      item.companies.map((citem: any, cid: number) => {
                         return (
-                          <div className="company-container">
+                          <div key={cid} className="company-container">
                             <div className="company-name">
                               <span className="bold-text-medium-xs">
                                 {citem.title}
@@ -239,9 +240,9 @@ const Resume = () => {
                   </div>
                   <div className="project-wrapper">
                     {item.id == 4 &&
-                      item.Projects.map((citem, cid) => {
+                      item.Projects.map((citem: any, cid: number) => {
                         return (
-                          <div className="project-container">
+                          <div key={cid} className="project-container">
                             <div className="project-name">
                               <span className="bold-text-medium-xs">
                                 {citem.title}
@@ -310,7 +311,7 @@ const Resume = () => {
       </div>
       {
         resumeAddModal && 
-        <Modal>
+        <Modal onClose={() => setResumeAddModal(false)}>
         <Resumeforms />
       </Modal>
       }

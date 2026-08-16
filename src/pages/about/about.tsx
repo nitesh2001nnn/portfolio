@@ -89,7 +89,7 @@ const About = () => {
         },
         ticks: {
           font: {
-            weight: "bold",
+            weight: "bold" as const,
           },
         },
       },
@@ -113,12 +113,12 @@ const About = () => {
       },
       datalabels: {
         color: "#fff",
-        formatter: (_value, context) => {
+        formatter: (_value: any, context: any) => {
           console.log("value,context", context);
           return context.chart.data.labels?.[context.dataIndex] ?? "";
         },
         font: {
-          weight: "bold",
+          weight: "bold" as const,
           size: 20,
         },
       },

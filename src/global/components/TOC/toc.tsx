@@ -8,7 +8,7 @@ const Headings =({headings,onHeadingClick,activeId}:any)=>{
     <>
     {headings.map((item:any,index:any)=>{
       return(
-        <div onClick={()=>onHeadingClick(item.id)} className={`${activeId == item.id?"active":""}`}>
+        <div key={index} onClick={()=>onHeadingClick(item.id)} className={`${activeId == item.id?"active":""}`}>
           {item.id == "root"?"":item.id}
         </div>
       )
@@ -23,8 +23,8 @@ const Headings =({headings,onHeadingClick,activeId}:any)=>{
 const useIntersectionObserver=(setActiveId:any)=>{
   const headingref:any = useRef({});
   useEffect(()=>{
-    const callback=(heading)=>{
-      heading.forEach((a)=>{
+    const callback=(heading: any)=>{
+      heading.forEach((a: any)=>{
         const headingId = a.target.getAttribute('id');
         if(headingId && headingId !== 'root'){
           headingref.current[headingId]=a
@@ -33,7 +33,7 @@ const useIntersectionObserver=(setActiveId:any)=>{
       console.log("now heading ref current",Object.keys(headingref.current))
 
       const visibleHeading:any=[];
-      Object.keys(headingref.current).map((a,b)=>{
+      Object.keys(headingref.current).map((a)=>{
         console.log("after object",a)
         const headingElement = headingref.current[a];
         console.log("heading element from visible part",headingElement)

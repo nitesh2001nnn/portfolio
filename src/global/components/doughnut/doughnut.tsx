@@ -7,9 +7,6 @@ import {
   Chart,
   ChartData,
   ChartOptions,
-  ChartType,
-  ChartConfiguration,
-  DefaultDataPoint,
   DoughnutController,
 } from "chart.js";
 import ChartDataLabels from "chartjs-plugin-datalabels";

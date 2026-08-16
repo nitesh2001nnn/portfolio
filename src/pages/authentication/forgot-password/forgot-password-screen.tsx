@@ -27,10 +27,6 @@ const Forgotpasswordscreen = () => {
     }
   }, [token]);
 
-  const handleScreenChange = (screenDetail: any) => {
-    setScreenInfo(screenDetail);
-  };
-
   return (
     <div className="reset-password-screen-wrapper">
       <div className="reset-blend-screen">

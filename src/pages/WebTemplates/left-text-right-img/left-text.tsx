@@ -23,7 +23,7 @@ const Lefttext = ({ buttonData, data }: leftTextProps) => {
           </span>
         </div>
         <div className="button-containers">
-          {buttonData?.map((item, index) => {
+          {buttonData?.map((item: any, index: number) => {
             return (
               <div
                 className="btn-wrap"

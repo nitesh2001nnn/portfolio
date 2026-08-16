@@ -304,8 +304,7 @@ const Resumeforms = () => {
     section: any,
     index: string,
     field: string,
-    value: string,
-    e?: any
+    value: string
   ) => {
     // console.log("index", index, e);
     setFormData((prev: any) => ({
@@ -350,7 +349,7 @@ const Resumeforms = () => {
   const handleBlur = (
     section: string,
     field: string,
-    value: string | any,
+    _value: string | any,
     id?: string
   ) => {
     setFormData((prev: any) => {
@@ -455,7 +454,7 @@ const Resumeforms = () => {
 
   const handleSubmit = () => {
     const payload = formData;
-    console.log("payload", formData);
+    console.log("payload", payload);
   };
 
   useEffect(() => {

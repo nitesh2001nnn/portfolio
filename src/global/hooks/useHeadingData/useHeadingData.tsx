@@ -1,12 +1,12 @@
 import{ useEffect, useState } from 'react'
 
 
-const getNestedHeading=(headingElements)=>{
+const getNestedHeading=(headingElements: any[])=>{
   const nestedHeadings:any = [];
   
-  console.log("getnested element",headingElements.pendingProps)
+  console.log("getnested element", headingElements)
  
-  headingElements.forEach((heading:any, index:any) => {
+  headingElements.forEach((heading:any) => {
     // const { innerText: title, id } = heading.memoizedProps;
     const id = heading.id;
     const title = heading.getAttribute('title')||""

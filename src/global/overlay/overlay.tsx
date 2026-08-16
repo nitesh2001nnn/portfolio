@@ -17,8 +17,8 @@ const OverlayElement = ({
   overlyClick,
   children,
   position,
-  overlayClass = "",
-  layer = 0,
+  overlayClass: _overlayClass = "",
+  layer: _layer = 0,
 }: OverlayProps) => {
   const [childPosition, setChildPosition] = useState<{
     top: "auto";

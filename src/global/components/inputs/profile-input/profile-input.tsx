@@ -6,8 +6,8 @@ type profileInput = {
   onChange: (item: string) => void;
   errorText: string;
 };
-const ProfileInput = ({ label, value, onChange, errorText }: profileInput) => {
-  const handleChange = (item) => {
+const ProfileInput = ({ label, value, onChange, errorText: _errorText }: profileInput) => {
+  const handleChange = (item: any) => {
     onChange(item);
   };
   return (
@@ -15,7 +15,7 @@ const ProfileInput = ({ label, value, onChange, errorText }: profileInput) => {
       <label>{label}</label>
       <input
         type="file"
-        onChange={(item) => handleChange(item)}
+        onChange={(item: any) => handleChange(item)}
         value={value}
       ></input>
     </div>

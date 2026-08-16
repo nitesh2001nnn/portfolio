@@ -1,12 +1,9 @@
-import { useState } from "react";
 import Toc from "../../../../global/components/TOC/toc";
 import "./read-data.scss";
 
 const Readdata = (props: any) => {
-  const [selectedheading, setSelectedHeading] = useState();
 
   const handleHeadings = (headingId: any) => {
-    setSelectedHeading(headingId);
 
     const getHeadingElement = document.getElementById(headingId);
     if (getHeadingElement) {

@@ -4,7 +4,7 @@ import Input from "../../../global/components/inputs/inputs";
 import Inputdropdown from "../../../global/components/button-with-dropdown/input-dropdown";
 import SKillstorer from "../../../global/components/skill-storer/skill-storer";
 import "./personal-detail.scss";
-import { useEffect, useRef } from "react";
+import { useRef } from "react";
 import { allowedKeys } from "../../../global/constants/helpers";
 
 const Personaldetail = (props: any) => {
@@ -35,7 +35,6 @@ const Personaldetail = (props: any) => {
     state,
     country,
     company,
-    skills,
     DOB,
     profilePhoto,
     skillSet,
@@ -65,7 +64,7 @@ const Personaldetail = (props: any) => {
     props.onChange(name, value);
   };
 
-  const handleDropdown = (name, item) => {
+  const handleDropdown = (name: any, item: any) => {
     // console.log(item);
     props.onChange(name, item);
   };
@@ -201,7 +200,7 @@ const Personaldetail = (props: any) => {
             }
           />
           <button
-            onClick={(e: any) =>
+            onClick={() =>
               props.handleSkillSubmit("personalDetails", "skillSet", "skills")
             }
             className="primary-button"
@@ -230,7 +229,7 @@ const Personaldetail = (props: any) => {
           }}
           type="file"
           errorText={profilePhoto.error}
-          onBlur={(e) => {
+          onBlur={(e: any) => {
             setTimeout(() => {
               if (fileRef.current && fileRef.current.files.length === 0) {
                 props.onChange("profilePhoto", null);
@@ -242,7 +241,7 @@ const Personaldetail = (props: any) => {
         <Input
           label="LinkedIn"
           name={"linkedin"}
-          onChange={(e) => handleChangeInput(e)}
+          onChange={(e: any) => handleChangeInput(e)}
           // value={props.data[0].socialLinks.linkedin.value}
           type="text"
           value={props.data.linkedin.value}
@@ -254,7 +253,7 @@ const Personaldetail = (props: any) => {
         <Input
           label="Github"
           name={"github"}
-          onChange={(e) => handleChangeInput(e)}
+          onChange={(e: any) => handleChangeInput(e)}
           // value={props.data[0].socialLinks.github.value}
           type="text"
           value={props.data.github.value}

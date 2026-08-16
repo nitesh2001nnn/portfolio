@@ -1,6 +1,6 @@
 import "./forgot-password.scss";
 
-const Forgotpassword = (props: any) => {
+const Forgotpassword = (_props: any) => {
   return (
     <div>
       <h1>forgot - password via link</h1>

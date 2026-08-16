@@ -1,10 +1,7 @@
 import { createBrowserRouter } from "react-router-dom";
 import {
   LazyAbout,
-  LazyLogin,
   LazyPortFolio,
-  LazyResetPassword,
-  LazySignup,
   LazyContact,
   LazyResume,
 } from "./lazy-routes";

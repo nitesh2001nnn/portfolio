@@ -1,5 +1,5 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import "./first-animated-page.scss";
 import { API_CONFIG } from "../../../helpers/api-config";
 

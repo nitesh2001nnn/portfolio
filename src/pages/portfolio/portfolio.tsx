@@ -1,5 +1,4 @@
 import { useQuery } from "@tanstack/react-query";
-import Carousel from "../../global/components/carousel/carousel";
 import Fullscreencarousel from "../../global/components/carousel/full-screen-carousel/full-screen-carousel";
 import Lefttext from "../WebTemplates/left-text-right-img/left-text";
 import Secondpage from "../WebTemplates/second-page/second-page";

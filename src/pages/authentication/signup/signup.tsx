@@ -371,6 +371,7 @@ const Signup = (props: any) => {
           isValid={formData.confirmPassword.isValid}
         ></PasswordInput>
         <Inputdropdown
+          name="country"
           label="Country"
           placeHolder="Select country"
           dropdownData={country}
@@ -380,6 +381,7 @@ const Signup = (props: any) => {
           error={formData.country.error}
         />
         <Inputdropdown
+          name="state"
           label="State"
           placeHolder="Select State"
           dropdownData={state}
@@ -389,6 +391,7 @@ const Signup = (props: any) => {
           error={formData.state.error}
         />
         <Inputdropdown
+          name="city"
           label="City"
           placeHolder="Select City"
           dropdownData={city}

@@ -12,7 +12,7 @@ const Contact = () => {
       successCb: (res: any) => {
         console.log("about contact data", res.data.data[0].data);
         setResponse(res.data.data?.[0]);
-        const updateData = res.data.data[0].data.map((itx, ind) => ({
+        const updateData = res.data.data[0].data.map((itx: any, ind: number) => ({
           id: ind,
           name: itx.value,
           url: itx.url,

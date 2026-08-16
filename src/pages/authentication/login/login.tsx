@@ -4,7 +4,7 @@ import "./login.scss";
 import PasswordInput from "../../../global/components/inputs/password-input";
 import { useNavigate } from "react-router-dom";
 
-const Login = (props: any) => {
+const Login = (_props: any) => {
   const [email, setEmail] = useState({
     value: "",
     isTouched: false,

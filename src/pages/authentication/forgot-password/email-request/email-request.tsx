@@ -1,6 +1,6 @@
 import "./email-request.scss";
 
-const Emailrequest = (props: any) => {
+const Emailrequest = () => {
   return (
     <div className="email-request-container">
       <div className="email-request-header">Reset Password Request!!</div>

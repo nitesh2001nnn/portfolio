@@ -8,8 +8,8 @@ type modalProps = {
 
 const Modal = ({ children, onClose }: modalProps) => {
   return createPortal(
-    <div className="modal-container">
-      <div className="modal-child">{children}</div>
+    <div className="modal-container" onClick={onClose}>
+      <div className="modal-child" onClick={(e) => e.stopPropagation()}>{children}</div>
     </div>,
     document.body
   );

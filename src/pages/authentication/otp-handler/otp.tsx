@@ -3,9 +3,9 @@ import Otpboxes from "../../../global/components/otp-boxes/otp-boxes";
 import "./otp.scss";
 import Countdowntimer from "../../../global/components/countdown-timer/countdown-timer";
 
-const Otp = (props: any) => {
+const Otp = (_props: any) => {
   const [otp, setOtp] = useState<any>("");
-  const [timer, setTimer] = useState<any>("0");
+  const [timer] = useState<any>("0");
   useEffect(() => {
     console.log("otp", otp);
   }, [otp]);

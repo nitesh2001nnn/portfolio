@@ -1,6 +1,6 @@
-import React from 'react'
 import Labelheader from '../../shared/components/LabelHeader/label-header'
 import "./temp-one.scss";
+
 const TempOne = () => {
   return (
     <div className='temp-one-container'>
@@ -9,7 +9,7 @@ const TempOne = () => {
 
         </div>
       <div className='image-container'>
-      <img src="assets/icons/boyWithCode.png"></img>
+        <img src="assets/icons/boyWithCode.png"></img>
 
       </div>
     </div>

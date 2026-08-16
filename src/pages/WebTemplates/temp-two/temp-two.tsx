@@ -18,7 +18,7 @@ const Temptwo = (props: any) => {
       <div className="card-container">
       {props.data.data?.map((item: any, index: any) => {
         return (
-          <div className="long-card">
+          <div key={index} className="long-card">
             <img src="assets/icons/check-mark.png"></img>
             <div className="card-text-container">
               <span className="card-main-text heading-medium ">

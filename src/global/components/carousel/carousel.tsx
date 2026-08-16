@@ -3,7 +3,7 @@ import "./carousel.scss";
 
 const Carousel = ({ data }: any) => {
   const [activeIndex, setActiveIndex] = useState(0);
-  const carouselRef = useRef(null);
+  const carouselRef = useRef<HTMLDivElement>(null);
   const nextSlide = () => {
     setActiveIndex((prev) => (prev + 1) % data.length);
   };
@@ -35,9 +35,9 @@ const Carousel = ({ data }: any) => {
       <div className="carousel-container">
         {
           <div className="carousel-slider" ref={carouselRef}>
-            {data.map((item: any, index: any) => {
+            {data?.map((item: any, index: any) => {
               return (
-                <div className="card-container">
+                <div key={index} className="card-container">
                   <div className="img-container">
                     <img src={item.src}></img>
                   </div>
@@ -54,9 +54,9 @@ const Carousel = ({ data }: any) => {
         <img src="/global/icons/chevron-right.svg"></img>
       </div>
       <div className="dot-container">
-        {data.map((_, index) => {
+        {data?.map((_: any, index: number) => {
           return(
-            <div className={`dots ${activeIndex === index ?"active":""}`}></div>
+            <div key={index} className={`dots ${activeIndex === index ?"active":""}`}></div>
 
           )
 

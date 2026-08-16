@@ -1,4 +1,3 @@
-import React from 'react'
 import "./label-header.scss";
 
 const Labelheader = () => {
