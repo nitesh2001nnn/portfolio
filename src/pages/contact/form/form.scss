@@ -21,10 +21,9 @@ form {
   }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 800px) {
   .form-container {
-    display: flex;
-    flex-direction: column;
+    flex-direction: column !important;
     gap: 16px;
   }
 }

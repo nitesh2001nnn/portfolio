@@ -1,10 +1,11 @@
 .resume-flow-container {
-  min-width: 600px;
+  min-width: auto;
+  width: 100%;
   max-width: 800px;
   display: flex;
   flex-direction: column;
   gap: 20px;
-  max-height: 600px;
+  max-height: 85vh;
   overflow: hidden;
   .stepper {
     display: flex;
@@ -17,5 +18,26 @@
   }
   .switch-states {
     overflow: auto;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .resume-flow-container {
+    padding: 5px;
+    gap: 15px;
+    max-height: 90vh;
+
+    .stepper {
+      flex-direction: column;
+      align-items: stretch;
+      gap: 12px;
+      width: 100%;
+
+      .upperside-btn {
+        width: 100%;
+        justify-content: space-between;
+        margin-top: 5px;
+      }
+    }
   }
 }

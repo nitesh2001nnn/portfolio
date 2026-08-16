@@ -8,7 +8,7 @@ import { useEffect, useState } from "react";
 import { API_CONFIG } from "../../helpers/api-config";
 
 const Portfolio = () => {
-  const [carouselData, setCarouselData] = useState([]);
+  const [carouselData, setCarouselData] = useState<any[]>([]);
   const { data } = useQuery({
     queryKey: ["portfolio"],
     queryFn: portfolio_page_service,

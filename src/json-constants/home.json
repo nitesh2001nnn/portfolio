@@ -1,0 +1,41 @@
+{
+  "headerData": [
+    {
+      "title": "Traveler at Heart",
+      "description": "Exploring new horizons, learning from diverse cultures, and finding inspiration in every journey.",
+      "image": {
+        "url": "/assets/icons/travel.jpeg"
+      }
+    },
+    {
+      "title": "Coder by Passion",
+      "description": "Designing and developing robust, scalable, and responsive web applications with modern technologies.",
+      "image": {
+        "url": "/assets/icons/anime_developer_workspace.png"
+      }
+    }
+  ],
+  "projects": [
+    {
+      "title": "My Projects",
+      "data": [
+        {
+          "title": "JioCX Developer Experience",
+          "description": "A developer portal optimizing productivity and platform integration, featuring server-side rendering, improved SEO, and highly responsive page speeds.",
+          "img": {
+            "url": "/assets/icons/developer_portal_banner.png"
+          },
+          "link": "https://developer.jiocx.com"
+        },
+        {
+          "title": "Realtime Chat Application",
+          "description": "Full-featured instant messaging app leveraging Socket.io, Node.js, and React to synchronize message streams across active clients.",
+          "img": {
+            "url": "/assets/icons/realtime_chat_banner.png"
+          },
+          "link": "https://github.com/nitesh2001nnn"
+        }
+      ]
+    }
+  ]
+}

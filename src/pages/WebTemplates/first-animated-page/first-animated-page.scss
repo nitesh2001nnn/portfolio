@@ -107,26 +107,88 @@
   }
 }
 
-@media (max-width: 1024px) and (min-width: 750px) {
+@media (max-width: 768px) {
   .animated-wrapper {
-    max-height: 350px;
-  }
-}
+    max-height: none;
+    height: auto;
+    padding: 30px 10px;
 
-@media (max-width: 750px) and (min-width: 500px) {
-  .animated-wrapper {
-    max-height: 210px;
-  }
-}
+    .animated-container {
+      flex-direction: column;
+      height: auto;
+      gap: 50px;
 
-@media (min-width: 360px) and (max-width: 500px) {
-  .animated-wrapper {
-    max-height: 150px;
-  }
-}
+      .left-side,
+      .right-side {
+        width: 100% !important;
+        height: auto;
+        overflow: visible;
+      }
 
-@media (min-width: 200px) and (max-width: 360px) {
-  .animated-wrapper {
-    max-height: 130px;
+      .inside-left,
+      .inside-right {
+        position: relative;
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+        padding: 0;
+
+        .travel-container,
+        .coder-container {
+          position: relative;
+          top: auto;
+          left: auto;
+          right: auto;
+          width: 85%;
+          transform: none;
+          margin: 0 auto 20px auto;
+          padding: 16px;
+          border-radius: 12px;
+          box-shadow: 0 8px 16px rgba(0, 0, 0, 0.08);
+          background-color: var(--white);
+          text-align: center;
+
+          .travel-text,
+          .fancy-text {
+            font-size: 2.2rem;
+            line-height: 2.4rem;
+            display: block;
+            margin-bottom: 6px;
+          }
+
+          .travel-mid-text,
+          .code-mid-text {
+            font-size: 0.9rem;
+            line-height: 1.2rem;
+            color: var(--grey-70);
+            display: block;
+          }
+        }
+
+        .img-container-left,
+        .img-container-right {
+          position: relative;
+          width: 100%;
+          height: auto;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          img {
+            position: relative;
+            top: auto;
+            left: auto;
+            transform: none;
+            width: 80%;
+            max-width: 280px;
+            height: auto;
+            max-height: 280px;
+            object-fit: cover;
+            border-radius: 16px;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+          }
+        }
+      }
+    }
   }
 }

@@ -40,6 +40,7 @@
         width: 50px;
         height: 50px;
         margin: 0px 5px;
+        filter: invert(1);
 
         transition: transform 0.3s ease;
         cursor: pointer;
@@ -96,8 +97,9 @@
     }
     .bottom-side-links {
       position: absolute;
-      height: 100vh;
-      z-index: 1;
+      height: auto;
+      padding: 20px 0;
+      z-index: 9999;
       gap: 20px;
       top: 100%;
       min-width: 100%;
@@ -105,6 +107,9 @@
       background-color: var(--black);
       left: 0;
       color: var(--white);
+      display: flex;
+      flex-direction: column;
+      box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
 
       .li-items {
         display: flex;
@@ -126,6 +131,8 @@
       display: block;
       width: 25px;
       height: 25px;
+      filter: invert(1);
+      cursor: pointer;
     }
   }
 }

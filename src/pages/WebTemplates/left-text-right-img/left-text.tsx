@@ -17,10 +17,11 @@ const Lefttext = ({ buttonData, data }: leftTextProps) => {
           <span className="third-sub-content text-body-normal">
             {data?.description}
           </span>
-          <span className="fourth-sub-content text-body-xxs ">
-            Worked in Jio for 2.8 years+ , in which i learn how to build project
-            as a project in industry level
-          </span>
+          {data?.additionalInfo && (
+            <span className="fourth-sub-content text-body-xxs ">
+              {data.additionalInfo}
+            </span>
+          )}
         </div>
         <div className="button-containers">
           {buttonData?.map((item: any, index: number) => {

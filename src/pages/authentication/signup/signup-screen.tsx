@@ -29,7 +29,7 @@ const Signupscreen = () => {
             </div>
           </div>
           <div className="signup-animation">
-            <img src="assets/icons/online-student.gif"></img>
+            <img src="assets/icons/anime_developer_workspace.png"></img>
           </div>
         </div>
         <div className="signup-switch-screen">

@@ -1,25 +1,51 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
-import { API_CONFIG } from "../../helpers/api-config"
-import { axiosInstance } from "../../interceptor/interceptor-main"
+import homeData from "../../json-constants/home.json";
+import aboutData from "../../json-constants/about.json";
+import contactData from "../../json-constants/contact.json";
+import portfolioData from "../../json-constants/portfolio.json";
 
 export const home_Page_service = (params: any) => {
-    axiosInstance.get(`${API_CONFIG.BASEURL}/api/homes?populate[profile][populate][headerData][populate]=image&populate[profile][populate][projects][populate][data][populate]=img`).then((res: any) => params.successCB(res)).catch((err: any) =>
-        params.errorCB(err)
-    )
-}
+  setTimeout(() => {
+    params.successCB({
+      data: {
+        data: [
+          {
+            profile: homeData
+          }
+        ]
+      }
+    });
+  }, 0);
+};
 
 export const about_Page_Service = (params: any) => {
-    axiosInstance.get(`${API_CONFIG.BASEURL}/api/about-work?populate[skills][populate]=dataSets&populate[top_skills]=*`).
-        then((res: any) => params.successCb(res)).
-        catch((err: any) => params.errorCb(err))
-}
+  setTimeout(() => {
+    params.successCb({
+      data: {
+        data: [
+          aboutData
+        ]
+      }
+    });
+  }, 0);
+};
 
 export const contact_Page_Service = (params: any) => {
-    axiosInstance.get(`${API_CONFIG.BASEURL}/api/contact-data?populate[img]=true&populate[data][populate]=img`).then((res) => params.successCb(res)).catch((err: any) => params.errorCb(err))
-}
+  setTimeout(() => {
+    params.successCb({
+      data: {
+        data: [
+          contactData
+        ]
+      }
+    });
+  }, 0);
+};
 
 export const portfolio_page_service = async () => {
-    const res = await axiosInstance.get(`${API_CONFIG.BASEURL}${API_CONFIG.PORTFOLIO}`);
-    return res.data
-
-}
+  return {
+    data: [
+      portfolioData
+    ]
+  };
+};

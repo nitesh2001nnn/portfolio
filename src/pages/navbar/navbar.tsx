@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import "./navbar.scss";
 import { navbarElement } from "./constant/navbar-constant";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useLocation } from "react-router-dom";
 import { useQuery } from "@tanstack/react-query";
 import { navbarApi } from "./api/navbar-api";
 import { API_CONFIG } from "../../helpers/api-config";
@@ -18,11 +18,12 @@ const Navbar = () => {
     queryFn: navbarApi,
   });
 
-  useEffect(() => {
-    console.log("navbar api data", data);
-  }, [data]);
-
   const navigate = useNavigate();
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    setBreadCombOpen(false);
+  }, [pathname]);
   return (
     <>
       <div className="navbar-container">
@@ -45,14 +46,13 @@ const Navbar = () => {
           </div>
           <div className="social-media-items">
             {data &&
-              data?.data.data[0]?.data[0]?.data?.map((itx: any) => {
+              data?.data.data[0]?.data[0]?.data?.map((itx: any, index: number) => {
                 return (
-                  <>
-                    <img
-                      src={`${API_CONFIG.BASEURL}${itx.img.url}`}
-                      onClick={() => window.open(itx.link)}
-                    ></img>
-                  </>
+                  <img
+                    key={index}
+                    src={`${API_CONFIG.BASEURL}${itx.img.url}`}
+                    onClick={() => window.open(itx.link)}
+                  ></img>
                 );
               })}
           </div>

@@ -43,5 +43,19 @@
   transition: opacity 0.3s ease;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 768px) {
+  .card-wrapper {
+    width: 100% !important;
+    max-width: 100%;
+    margin: 10px 0;
+    box-sizing: border-box;
+
+    .card-title-container {
+      .sub-title {
+        height: auto !important;
+        overflow: visible !important;
+        margin-top: 8px;
+      }
+    }
+  }
 }

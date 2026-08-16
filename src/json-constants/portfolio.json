@@ -1,0 +1,49 @@
+{
+  "section": "Portfolio",
+  "title": "Selected Works & Projects",
+  "description": "Here is a showcase of the projects I have worked on, ranging from full-stack web applications to interactive front-end templates.",
+  "additionalInfo": "Worked in Jio for 2.8 years+ , in which i learn how to build project as a project in industry level",
+  "cd_1": [
+    {
+      "data": [
+        {
+          "title": "JioCX Developer Portal",
+          "link": "https://developer.jiocx.com",
+          "img": {
+            "url": "/assets/icons/developer_portal_banner.png"
+          }
+        },
+        {
+          "title": "Realtime Chat Application",
+          "link": "https://github.com/nitesh2001nnn",
+          "img": {
+            "url": "/assets/icons/realtime_chat_banner.png"
+          }
+        }
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "title": "Featured Projects",
+      "data": [
+        {
+          "title": "JioCX Developer Experience",
+          "description": "Built using Next.js, optimized for search engines and user interaction.",
+          "img": {
+            "url": "/assets/icons/developer_portal_banner.png"
+          },
+          "link": "https://developer.jiocx.com"
+        },
+        {
+          "title": "Realtime Chat App",
+          "description": "A communication web application utilizing socket connections.",
+          "img": {
+            "url": "/assets/icons/realtime_chat_banner.png"
+          },
+          "link": "https://github.com/nitesh2001nnn"
+        }
+      ]
+    }
+  ]
+}

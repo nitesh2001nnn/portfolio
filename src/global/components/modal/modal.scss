@@ -11,5 +11,18 @@
   .modal-child {
     padding: 20px 32px;
     background-color: var(--white);
+    max-width: 95%;
+    width: 650px;
+    box-sizing: border-box;
+    border-radius: 12px;
+    overflow: hidden;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .modal-container {
+    .modal-child {
+      padding: 16px 12px;
+    }
   }
 }

@@ -1,0 +1,40 @@
+{
+  "skills": [
+    {
+      "title": "Backend",
+      "total": 7,
+      "dataSets": [
+        { "name": "Node.JS" },
+        { "name": "Express.JS" },
+        { "name": "SQL" },
+        { "name": "Java" },
+        { "name": "JDBC" },
+        { "name": "REST API's" },
+        { "name": "JSON Web Token (JWT)" }
+      ]
+    },
+    {
+      "title": "Frontend",
+      "total": 10,
+      "dataSets": [
+        { "name": "HTML" },
+        { "name": "CSS" },
+        { "name": "Javascript" },
+        { "name": "Chart.JS" },
+        { "name": "React.JS" },
+        { "name": "Next.JS" },
+        { "name": "Canvas" },
+        { "name": "Redux" },
+        { "name": "Redux Toolkit & Thunk" },
+        { "name": "Responsive Design" }
+      ]
+    }
+  ],
+  "top_skills": [
+    { "label": "React.JS", "value": 90, "color": "#00d8ff" },
+    { "label": "Javascript", "value": 85, "color": "#f7df1e" },
+    { "label": "Next.JS", "value": 80, "color": "#000000" },
+    { "label": "Node.JS", "value": 75, "color": "#339933" },
+    { "label": "CSS/HTML", "value": 95, "color": "#1572b6" }
+  ]
+}

@@ -39,6 +39,9 @@
         img {
           width: 32px;
           height: 32px;
+          @media (prefers-color-scheme: dark) {
+            filter: invert(1);
+          }
         }
       }
     }
@@ -56,18 +59,43 @@
 }
 @media (min-width: 300px) and (max-width: 800px) {
   .left-text-container {
-    flex-direction: column;
-    .left-text-side {
-      .first-title {
-        margin-bottom: 5px;
+    flex-direction: column-reverse;
+    max-height: none;
+    gap: 30px;
+
+    .left-side-div {
+      width: 100%;
+
+      .left-text-side {
+        .first-title {
+          margin-bottom: 5px;
+        }
+        .third-sub-content {
+          margin-top: 10px;
+        }
+        .fourth-sub-content {
+          margin-top: 5px;
+          text-overflow: ellipsis;
+        }
       }
-      .third-sub-content {
-        margin-top: 10px;
+
+      .button-containers {
+        justify-content: flex-start;
+        gap: 20px;
+        margin-top: 20px;
       }
-      .fourth-sub-content {
-        margin-top: 5px;
-        text-overflow: ellipsis;
-        // width: 55%;
+    }
+
+    .image-side {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+
+      img {
+        max-height: 280px;
+        width: auto;
+        max-width: 100%;
+        border-radius: 20px;
       }
     }
   }

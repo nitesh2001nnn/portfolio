@@ -1,0 +1,31 @@
+{
+  "section": "Contact",
+  "title": "Let's connect and work together",
+  "description": "Feel free to reach out to me for collaborations, inquiries, or just to say hi! I'll get back to you as soon as possible.",
+  "img": {
+    "url": "/assets/icons/anime_developer_workspace.png"
+  },
+  "data": [
+    {
+      "value": "LinkedIn",
+      "url": "https://www.linkedin.com/in/nitesh-nimje-74a78820b",
+      "img": {
+        "url": "/assets/icons/linkedin.svg"
+      }
+    },
+    {
+      "value": "Github",
+      "url": "https://github.com/nitesh2001nnn",
+      "img": {
+        "url": "/assets/icons/github.svg"
+      }
+    },
+    {
+      "value": "WhatsApp",
+      "url": "https://wa.me/7987962662",
+      "img": {
+        "url": "/assets/icons/whatsapp.svg"
+      }
+    }
+  ]
+}
